@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url(fonts/raleway/Raleway-Regular.ttf);
+    src: url(fonts/raleway/Raleway-Light.ttf),
+    url(fonts/raleway/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url(fonts/open-sans/OpenSans-Regular.ttf);
+    src: url(fonts/open-sans/OpenSans-Light.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway-Regular', 'Arial', 'sans-serif';
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3px;
+    background-color: #222f3e;
+    color: white;
+}
+nav .programmer h1{
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+nav .programmer h1 img{
+    width: 110px;
+}
+nav .onglets{
+    margin-top: 25px;
+}
+nav .onglets a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #bababa;
+    font-size: 20px;
+}
+nav .onglets a:hover{
+    color: #fff;
+    border-bottom: 2px solid #bababa;
+}
+header{
+    font-family: 'OpenSans-Regular', 'Arial', 'sans-serif';
+    background-color: #f2f2f2;
+    margin-top: -20px;
+}
+header p{
+    text-align: center;
+    font-size: 20px;
+    padding: 50px;
+}
+#formulaire{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+#formulaire form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #f2f2f2;
+    padding: 80px;
+    border-radius: 40px;
+   
+}
+#formulaire form .inputs{
+    display: flex;
+    flex-flow: column wrap;
+}
+#formulaire form .inputs input, a,select,button{
+    margin-right: 80px;
+}
+#formulaire form .inputs #filière, #niveau{
+    margin-bottom: 50px;
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-family: 'OpenSans-Regular', 'Arial', 'sans-serif';
+    font-size: 17px;
+    color: #fff;
+    background-color: #222f3e;
+}
+#formulaire form .inputs #niveau{
+    cursor: pointer;
+}
+#formulaire form .inputs #filière::placeholder{
+    color: #fff;
+}
+#formulaire form .inputs a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-family: 'OpenSans-Regular', 'Arial', 'sans-serif';
+    border-bottom: 2px solid #bababa;
+}
+#formulaire form .inputs a:hover{
+    color: #2f77ca;
+    border-bottom: 2px solid #2f77ca;
+}
+#formulaire form .inputs #button button{
+    float: right;
+    width: 100px;
+    height: 40px;
+    background-color: #747cdf;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+#formulaire form .inputs #button button:hover{
+    color: #fff;
+}
+#repartition{
+    display: none;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+#repartition .text1 p{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #bababa;
+}
+#repartition .tableau {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#repartition .tableau table{
+   border-collapse: collapse;
+   padding: 15px;
+}
+#repartition .tableau table th, td{
+    border: 1px solid #000;
+}
+#repartition .tableau table td input{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Raleway-Regular','sans-serif';
+    font-size: 15px;
+    background-color: #222f3e;
+    color: #fff;
+}
+#repartition .tableau table td .large{
+    height: 35px;
+}
+#repartition #sauvegarde{
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+#repartition #sauvegarde button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #747cdf;
+    font-size: 18px;
+    cursor: pointer;
+}
+#repartition #sauvegarde button:hover{
+    color: #fff;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gestion des cours/css/cours.css">
+    <title>Gestion des cours</title>
+</head>
+<body>
+    <nav>
+        <div class="programmer">
+            <h1><img src="Homepage images/logo universite thies.jpg" alt=""></h1>
+        </div>
+        <div class="onglets">
+            <a href="Homepage.html">Acceuil</a>
+            <a href="inscriptions.html">Inscription</a>
+            <a href="note.html">Notes</a>
+            <a href="admistrative.html">Cursus</a>
+            <a href="campus social.html">Campus Social</a>
+        </div>  
+    </nav>
+    <header id="header">
+        <p>Saisissez la filière et le niveau des étudiants puis cliquer sur "consulter l'emplois du temps"
+             pour afficher l'emplois du temps ou sur "Editer" pour définir l'emplois du temps de la classe.
+        </p>
+    </header>
+    <section id="formulaire">
+        <form action="">
+            
+                <div class="inputs">
+                    <input type="text" id="filière" name="filière" placeholder="Filière" autofocus>
+                    <a href="" id="emploisdutemps">Consulter l'emplois du temps:</a>
+                </div>
+                <div class="inputs">
+                    <select name="niveau" id="niveau">
+                        <option value=""Niveau>Niveau</option>
+                        <option value="Licence 1">Licence 1</option>
+                        <option value="Licence 2">Licence 2</option>
+                        <option value="Licence 3">Licence 3</option>
+                        <option value="Master 1">Master 1</option>
+                        <option value="Master 2">Master 2</option>
+                    </select>
+                    <div id="button">
+                        <button id="bouton">Editer</button>
+                    </div>
+                </div>
+        </form>
+    </section>
+    <section id="repartition">
+        <div class="text1">
+            <p>Emplois du temps : <span id="level"></span> <span id="nomdufilière"></span></p>
+        </div>
+        <div class="tableau">
+            <table>
+                <caption>Emplois du temps:</caption>
+                <tr>
+                    <th>Heures</th>
+                    <th>Lundi</th>
+                    <th>Mardi</th>
+                    <th>Mercredi</th>
+                    <th>Jeudi</th>
+                    <th>Vendredi</th>
+                    <th>Samedi</th>
+                </tr>
+                <tr>
+                    <td>08H-09H</td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                </tr>
+                <tr>
+                    <td>09H-10H</td>
+                </tr>
+                <tr>
+                    <td>10H-11H</td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                </tr>
+                <tr>
+                    <td>11H-12H</td>
+                </tr>
+                <tr>
+                    <td>12H-13H</td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                </tr>
+                <tr>
+                    <td>13H-14H</td>
+                </tr>
+                <tr>
+                    <td>14H-15H</td>
+                    <td><input type="text" class="medium"></td>
+                    <td><input type="text" class="medium"></td>
+                    <td><input type="text" class="medium"></td>
+                    <td><input type="text" class="medium"></td>
+                    <td><input type="text" class="medium"></td>
+                    <td><input type="text" class="medium"></td>
+                </tr>
+                <tr>
+                    <td>15H-16H</td>
+                    <td><input type="text" class="medium"></td>
+                    <td><input type="text" class="medium"></td>
+                    <td><input type="text" class="medium"></td>
+                    <td><input type="text" class="medium"></td>
+                    <td><input type="text" class="medium"></td>
+                    <td><input type="text" class="medium"></td>
+                </tr>
+                <tr>
+                    <td>16H-17H</td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                    <td rowspan="2"><input type="text" class="large"></td>
+                </tr>
+                <tr>
+                    <td>17H-18H</td>
+                </tr>
+            </table>
+            <div id="sauvegarde">
+                <button id="enregistrer">Enregistrer</button>
+            </div>
+        </div>
+    </section>
+    <script src="gestion des cours/js/cours.js"></script>
+</body>
+</html>

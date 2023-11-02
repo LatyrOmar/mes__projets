@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gestion administrative/css/cursus.css">
+    <title>Gestion Administrative</title>
+</head>
+<body>
+    <nav>
+        <div class="programmer">
+            <h1><img src="Homepage images/logo universite thies.jpg" alt=""></h1>
+        </div>
+        <div class="onglets">
+            <a href="Homepage.html">Acceuil</a>
+            <a href="inscriptions.html">Inscription</a>
+            <a href="note.html">Notes</a>
+            <a href="cours.html">Cours</a>
+            <a href="campus social.html">Campus Social</a>
+        </div>  
+    </nav>
+    <section id="contenueprincipale">
+        <form action="">
+            <div class="contenue">
+                <div class="inputs">
+                        <div class="puts">
+                            <label for="firstname">Prenom:</label><br>
+                            <input type="text" id="prenom" name="prenom" class="in" autofocus>
+                            <img src="gestion administrative/image/persone.png" alt="icon">
+                        </div>
+                        <div class="puts">
+                            <label for="date" id="date">Date de naissance:</label>
+                            <input type="date" id="datedenaissance" name="datedenaissance" class="in">
+                        </div>
+                        <div class="puts">
+                            <label for="ecole" >Dernier établissement fréquenté:</label>
+                            <input type="text" id="ecole" name="ecole" class="in">
+                            <img src="gestion administrative/image/school.png" alt="icon">
+                        </div>
+                        <div class="puts">
+                            <label for="diplome">Dernier diplôme obtenue:</label>
+                            <select name="diplome" id="diplome">
+                                <option value="BAC">BAC</option>
+                                <option value="Licence 3">Licence 3</option>
+                                <option value="Master 2">Master 2</option>
+                                <option value="Doctorat">Doctorat</option>
+                            </select>
+                        </div>
+                        <div class="puts">
+                            <label for="note">Relevé de note du BAC:</label>
+                            <input type="file" id="relevé" name="relevé" >
+                            
+                        </div>
+                </div>    
+                        <div class="inputs">
+                            <div class="puts">
+                                <label for="nom">Nom:</label><br>
+                                <input type="text" id="nom" name="nom" class="in">
+                                <img src="gestion administrative/image/persone.png" alt="icon">
+                            </div>
+                            <div class="puts">
+                                <label for="adresse">Adresse:</label>
+                                <input type="text" id="adresse" name="adresse" class="in" >
+                                <img src="gestion administrative/image/adresse.png" alt="icon">
+                            </div>
+                            <div class="puts">
+                                <label for="niveau">Niveau:</label>
+                                <select name="niveau" id="niveau">
+                                    <option value="BAC" selected>BAC</option>
+                                    <option value="Licence 1">Licence 1</option>
+                                    <option value="Licence 2">Licence 2</option>
+                                    <option value="Licence 3">Licence 3</option>
+                                    <option value="Master 1">Master 1</option>
+                                    <option value="Master 2">Master 2</option>
+                                </select>
+                            </div>
+                            <div class="puts">
+                                <label for="mention">Année d'obtention:</label>
+                                <select name="mention" id="mention">
+                                    <option value="">Année</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option> 
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2023</option>
+                                </select>
+                            </div>
+                            <div class="puts">
+                                <label for="mention2">Mention:</label>
+                                <select name="mention2" id="mention2">
+                                    <option value="">Mention</option>
+                                    <option value="Très Bien">Très Bien</option>
+                                    <option value="Bien">Bien</option>
+                                    <option value="Assez Bien">Assez Bien</option>
+                                    <option value="Passable" >Passable</option>
+                                </select>
+                            </div>  
+                        </div>     
+            </div>
+                <div class="puts">
+                    <fieldset>
+                        <legend>Bulletin de note des deux derniers années</legend>
+                        <input type="file" id="bulletin1" name="bulletin1" placeholder="bulletin">
+                        <input type="file" id="bulletin2" name="bulletin2" placeholder="bulletin">
+                    </fieldset>
+                </div>
+                <div id="bouton">
+                    <button id="valider">valider</button>
+                    <img src="gestion administrative/image/valider.png" alt="">
+                </div>   
+                
+        </form>
+    </section>
+    <script src="gestion administrative/js/cursus.js"></script>
+</body>
+</html>

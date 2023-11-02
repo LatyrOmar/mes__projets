@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gestion des notes/css/note.css">
+    <title>Gestion des notes</title>
+</head>
+<body>
+    <nav>
+        <div class="programmer">
+            <h1><img src="Homepage images/logo universite thies.jpg" alt=""></h1>
+        </div>
+        <div class="onglets">
+            <a href="Homepage.html">Acceuil</a>
+            <a href="inscriptions.html">Inscription</a>
+            <a href="cours.html"> Cours</a>
+            <a href="admistrative.html">Cursus</a>
+            <a href="campus social.html">Campus Social</a>
+        </div>  
+    </nav>
+    <header id="header">
+        <p>Remplissez le formulaire puis cliquer sur OK pour saisir les notes de l'étudiant.
+        </p><br>        
+    </header>
+    <section class="Gestiondesnotes">        
+            <div id="infos">
+                    <form action="">
+                        <div class="TEXT">
+                            <input type="text" id="nom" name="nom" placeholder="Nom" autofocus>
+                            <input type="text" id="prenom" name="prenom" placeholder="prenom">
+                        </div>
+                        <div class="TEXT">
+                            <div class="annee">
+                                <label for="naissance">Date de naissance:</label>
+                                <input type="date" id="naissance" name="naissance">
+                            </div>
+                            <div>
+                                 <input type="text" name="filiere2" id="filiere" placeholder="Filière" >
+                            </div>
+                        </div>
+                        <div class="TEXT">
+                            <select name="année" id="année">
+                                <option value="">Année universitaire</option>
+                                <option value="2023/2024">2020/2021</option>
+                                <option value="2024/2025">2024/2025</option>
+                                <option value="2022/2023">2022/2023</option>
+                                <option value="2021/2022">2021/2022</option>  
+                            </select>
+                            <select name="niveau" id="niveau">
+                                <option value="">NIVEAU</option>
+                                <option value="Licence1">Licence1</option>
+                                <option value="Licence2">Licence2</option>
+                                <option value="Licece3">Licence3</option>
+                                <option value="Master1">Master1</option>
+                                <option value="Master2">Master2</option>
+                            </select>
+                        </div>
+                        <div class="TEXTS">
+                            <select name="semestre" id="semestre">
+                                <option value="">Semestre</option>
+                                <option value="Semestre 1">Semestre 1</option>
+                                <option value="Semestre 2">Semestre 2</option>
+                            </select>
+                        </div>
+                        <button id="ok">OK</button>
+        
+                    </form>
+                
+            </div> 
+            <div id="maincontent">
+                <div id="contenue"></div>
+                <div class="lvel">
+                    <p>Niveau :<span id="level"></span> <span id="choix"></span></p>
+                </div>
+                <div class="etudiant">
+                    <p> <span id="PRENOM2"></span> <span id="NOM2"></span></p><br>
+                    <p>né(e) le <span id="bornday"></span></p>
+                </div>
+                <div class="tableau">
+                    <table>
+                        <caption>RELEVE DE NOTES</caption>
+                        <tr>
+                            <th><span id="SEMESTRE2"></span></th>
+                        </tr>
+                        <tr>
+                            <td>UE</td>
+                            <td>Matière</td>
+                            <td>Moyenne</td>
+                            <td>Crédit</td>
+                            <td>COEF</td>
+                            <td>Moyenne</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><input type="text" class="INP" autofocus></td>
+                            <td><input type="text" class="ITP" ></td>
+                            <td><input type="number" class="IRP" step="2" min="0" max="20"></td>
+                            <td rowspan="2"><input type="number" class="IMP"  min="0" max="60"></td>
+                            <td rowspan="2"><input type="number" class="IMP" step="2" min="2" max="8"></td>
+                            <td rowspan="2"><input type="number" class="INP" step="2" min="0" max="20"></td>
+                        </tr>
+                        <tr>
+                            
+                            <td><input type="text" class="ITP"></td>
+                            <td><input type="number" class="IRP" step="2" min="0" max="20"></td>
+                           
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><input type="text" class="INP"></td>
+                            <td><input type="text" class="ITP"></td>
+                            <td><input type="number" class="IRP" step="2" min="0" max="20"></td>
+                            <td rowspan="2"><input type="number"class="IMP"  min="0" max="60"></td>
+                            <td rowspan="2"><input type="number" class="IMP" step="2" min="2" max="8"></td>
+                            <td rowspan="2"><input type="number" class="INP" step="2" min="0" max="20"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="ITP" ></td>
+                            <td><input type="number" class="IRP" step="2" min="0" max="20"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><input type="text" class="INP"></td>
+                            <td><input type="text" class="ITP" ></td>
+                            <td><input type="number" class="IRP" step="2" min="0" max="20"></td>
+                            <td rowspan="2"><input type="number" class="IMP"  min="0" max="60"></td>
+                            <td rowspan="2"><input type="number" class="IMP" step="2" min="2" max="8"></td>
+                            <td rowspan="2"><input type="number" class="INP" step="2" min="0" max="20"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="ITP" ></td>
+                            <td><input type="number" class="IRP" step="2" min="0" max="20"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><input type="text" class="INP"></td>
+                            <td><input type="text" class="ITP" step="2" min="0" max="20"></td>
+                            <td><input type="number" class="IRP" step="2" min="0" max="20"></td>
+                            <td rowspan="2"><input type="number" class="IMP" min="0" max="60"></td>
+                            <td rowspan="2"><input type="number" class="IMP" step="2" min="2" max="8"></td>
+                            <td rowspan="2"><input type="number" class="INP" step="2" min="0" max="20"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="ITP" step="2" min="0" max="20"></td>
+                            <td><input type="number" class="IRP" step="2" min="0" max="20"></td>
+                            
+                        </tr>
+                        <tr>
+                            <th>Moyenne <span class="semestre1"> : </span></th>
+                            <th><input type="text" name="" id="moyenne"></th>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div id="bouton">
+                    <button id="enregistrer">Enregistrer</button>
+                 </div>
+            </div>
+           
+    </section>   
+    <script src="gestion des notes/js/note.js"></script>
+</body>
+</html>

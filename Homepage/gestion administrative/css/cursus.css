@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Raleway-regular';
+    src: url(fonts/raleway/Raleway-Regular.ttf);
+    src: url(fonts/raleway/Raleway-Light.ttf),
+         url(fonts/raleway/Raleway-SemiBold.ttf);   
+}
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url(fonts/open-sans/OpenSans-Regular.ttf);
+    src: url(fonts/open-sans/OpenSans-Light.ttf),
+    url(fonts/raleway/Raleway-Medium.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway-Regular', 'Arial', 'sans-serif';
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3px;
+    background-color: #222f3e;
+    color: white;
+}
+nav .programmer h1{
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+nav .programmer h1 img{
+    width: 110px;
+}
+nav .onglets{
+    margin-top: 25px;
+}
+nav .onglets a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #bababa;
+    font-size: 20px;
+}
+nav .onglets a:hover{
+    color: #fff;
+    border-bottom: 2px solid #bababa;
+}
+#contenueprincipale{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    width: auto;
+ 
+}
+#contenueprincipale form{
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+#contenueprincipale form .contenue{
+
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: -28px;
+}
+#contenueprincipale form .contenue .inputs{
+    margin-right: 40px;
+}
+#contenueprincipale .contenue .inputs .puts{
+   margin-bottom: 15px;
+   display: flex;
+   flex-flow: column wrap;
+   position: relative;
+}
+#contenueprincipale form .contenue .inputs .puts #prenom{
+    margin-top: -10px;
+}
+#contenueprincipale form .contenue .inputs .puts #nom{
+    margin-top: -10px;
+}
+#contenueprincipale form .contenue .inputs .puts input, select{
+    margin-top: 10px;
+}
+#contenueprincipale form .contenue .inputs .puts select{
+    cursor: pointer;
+}
+#contenueprincipale form .contenue .inputs .puts #relevé, #bulletin1, #bulletin2{
+    cursor: pointer;
+   background-color: #fff;
+}
+#contenueprincipale form .contenue .inputs .puts .in, select{
+    border: none;
+    outline: none;
+    width: 220px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: 'Raleway-Regular', 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#contenueprincipale form .contenue .inputs .puts img{
+    position: absolute;
+    left: 5px;
+    bottom: 9px;
+    width: 20px;
+}
+#contenueprincipale form .puts fieldset {
+    margin-top: -50px;
+}
+#contenueprincipale form .puts fieldset legend{
+    font-size: 20px;
+    font-weight: bold;
+}
+#contenueprincipale form #bouton{
+    margin-top: 5px; 
+    float: right;
+    position: relative;
+}
+#contenueprincipale form #bouton button{
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 55px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #747cdf;
+    padding: 5px;
+    cursor: pointer;
+}
+#contenueprincipale form #bouton button:hover{
+    background-color: rgb(55, 55, 170);
+    color: #fff;
+}
+
+#contenueprincipale form #bouton img{
+    position: absolute;
+    right: 0;
+    bottom: 18px;
+     width: 20px;   
+}
+@media screen and (max-width: 850px){
+    nav{
+        overflow-x: auto;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 20px 0px;
+    }
+    nav .programmer h1{
+        font-size: 20px;
+        font-weight: 480;
+      
+    }
+    nav .onglets{
+        margin: -10px 20px 0 20px;
+    }
+    nav .onglets a{
+        display: block;
+        flex-wrap: wrap;
+        margin-top: 5px;
+    }
+}  
+@keyframes textclip{
+    to {
+        background-position: 200% center;
+    }
+}

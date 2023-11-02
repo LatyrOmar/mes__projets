@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des inscription</title>
+    <link rel="stylesheet" href="gestiondesinscriptions/css/inscription.css">
+</head>
+<body>
+    <nav>
+        <div class="programmer">
+            <h1><img src="Homepage images/logo universite thies.jpg" alt="logo"></h1>
+        </div>
+        <div class="onglets">
+            <a href="Homepage.html">Acceuil</a>
+            <a href="note.html">Notes</a>
+            <a href="cours.html">Cours</a>
+            <a href="admistrative.html">Cursus</a>
+            <a href="campus social.html">Campus Social</a>
+
+        </div>  
+    </nav>
+    <section id="Inscription-ou-Réinscription">
+        <div id="bouton1">
+            <div class="choix1">
+                <button id="inscription" onclick="affichageFormulaireInscription ()">Inscription</button>
+            </div>
+            <div class="choix1">
+                <p>ou</p>
+            </div>
+            <div class="choix1">
+                <button id="réinscription" onclick="affichageFormulaireDeRéinscription  ()">Réinscription</button>
+            </div>
+        </div>
+    </section>
+    <section id="gestionInscriptions">
+        <div id="formulaire">
+            <form action="" method="get">
+                <div class="contenue">
+                    <div class="info">
+                        <label for="nom">Nom</label><br>
+                        <input type="text" id="nom" name="nom" autofocus required minlength="1">
+                    </div>
+                    <div class="info">
+                        <label for="prenom">Prenom</label><br>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                    <div class="info">
+                        <label for="date">Date de naissance</label><br>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="sexe">
+                        <label>Sexe:</label><br>
+                        <input type="radio" id="masculin" name="sexe" value="M"><label for="masculin">M</label><br>
+                        <input type="radio" id="feminin" name="sexe" value="F"><label for="feminin">F</label> 
+                    </div>
+                    <div class="info">
+                        <label for="mail"></label>Adresse-mail<br>
+                        <input type="email" id="mail" name="mail" required>
+                    </div>
+                    <div class="info">
+                        <label for="phone">Téléphone</label><br>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="info">
+                    <label for="UFR" id="UFR1">UFR</label><br>
+                    <input type="text" id="UFR" name="UFR" required>
+                    </div>
+                    <div class="info">
+                        <label for="filière">filière</label><br>
+                        <input type="text" id="filière" name="filière" required>
+                    </div>
+                    <div class="info">
+                        <select name="niveau1" id="niveau1" required>
+                            <option value="">Niveau</option>
+                            <option value="Licence1">Licence1</option>
+                            <option value="Licence2">Licence2</option>
+                            <option value="Licensce3">Licence3</option>
+                            <option value="Master1">Master1</option>
+                            <option value="Master2">Master2</option>
+                        </select>
+                    </div>
+                    <div class="button">
+                        <button id="valider">S'inscrir</button>
+                    </div>
+                    <div id="text">
+                        <p ><a href="#" id="text1">Voir la liste des étudiants inscrits:</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+            <div id="etudiantsInscrits">
+                <table id="contenue-du-tableau">
+                    <caption>Liste des étudiants <span id="level"></span> <span id="option"></span></caption>
+                    
+                    <div id="Inscrits"></div> 
+                </table>    
+            </div>
+    </section> 
+    
+    <script src="gestiondesinscriptions/js/inscription.js"></script>
+</body>
+</html>

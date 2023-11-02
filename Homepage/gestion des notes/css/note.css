@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url(fonts/raleway/Raleway-Regular.ttf);
+    src: url(fonts/raleway/Raleway-Light.ttf),
+        url(fonts/raleway/Raleway-Black.ttf),
+        url(fonts/raleway/Raleway-Bold.ttf );
+}
+@font-face {
+    font-family: 'alex-brush';
+    src: url(fonts/alex-brush/AlexBrush-Regular.ttf);
+   
+}
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url(fonts/open-sans/OpenSans-Regular.ttf);
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway-Regular', 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3px;
+    background-color: #222f3e;
+    color: white;
+}
+nav .programmer h1{
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+nav .programmer h1 img{
+    width: 110px;
+}
+nav .onglets{
+    margin-top: 25px;
+}
+nav .onglets a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #bababa;
+    font-size: 20px;
+}
+nav .onglets a:hover{
+    color: #fff;
+    border-bottom: 2px solid #bababa;
+}
+header p{
+    font-size: 20px;
+    font-weight: bold;
+   text-align: center;
+   margin-top: 50px;
+}
+.Gestiondesnotes{
+    margin-top: 60px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+ }
+ .Gestiondesnotes form{
+    background-color: #fff;
+     margin-top: -40px;
+     padding: 50px;
+     width: 600px;
+     border-radius: 50px;
+     display: flex;
+     flex-flow: column wrap;
+     align-items: center;
+     justify-content: center;
+ }
+ .Gestiondesnotes form .TEXT{
+    display: flex;
+ }
+ .Gestiondesnotes form .TEXT input,
+ .Gestiondesnotes form .TEXT input{
+    display: flex;
+ }
+ .Gestiondesnotes form .TEXT .annee{
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 20px;
+ }
+ .Gestiondesnotes form .TEXT .annee label{
+    margin-top: -25px;
+    margin-bottom: 4px;
+   
+ }
+ .Gestiondesnotes p{
+     font-size: 20px;
+     font-weight: bold;
+ }
+ .Gestiondesnotes #infos input::placeholder{
+     color: #fff;
+     opacity: 1;
+ }
+ .Gestiondesnotes #infos select{
+     cursor: pointer;
+ }
+ .Gestiondesnotes #infos form .TEXT input,select{
+     font-family: 'Raleway-Regular','Arial','sans serif';
+     border: none;
+     outline: none;
+     border-radius: 30px;
+     width: 240px;
+     height: 40px;
+     background-color: #222f3e;
+     text-align: center;
+     color: #fff;
+     font-size: 16px;
+     margin-bottom: 30px;
+ }
+.Gestiondesnotes #infos form input,select{
+    margin-right: 25px;
+}
+.Gestiondesnotes #infos form .TEXTS{
+    margin-left: -260px;
+}
+.Gestiondesnotes #infos form button{
+     background-color: #747cdf;
+     border: none;
+     outline: none;
+     width: 100px;
+     height: 40px;
+     font-size: 18px;
+     font-weight: bold;
+     margin-right: -350px;
+     margin-top: -70px;
+     cursor: pointer;
+     float: right;
+ }
+ .Gestiondesnotes #infos form button:hover{
+    background-color: rgb(55, 55, 170);
+    color: #fff;
+ }
+
+ .Gestiondesnotes #maincontent{
+    display: none;
+     margin-top: 80px;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+     flex-flow: column wrap;
+     background-color: #222f3e;
+     border-radius: 30px;
+     width: 900px;
+     color: #bababa;
+     margin-bottom: 20px;
+ } 
+ .Gestiondesnotes #maincontent .lvel p{
+    text-align: center;
+ }
+ .Gestiondesnotes #maincontent .tableau{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .Gestiondesnotes #maincontent .tableau table{
+    border-collapse: collapse;
+    font-family: 'Open-sans', 'Arial';
+    padding: 50px;
+ }
+ .Gestiondesnotes #maincontent .tableau table td{
+    border: 1px solid #000;
+ }
+ .Gestiondesnotes #maincontent .tableau table tr td input{
+    border: none;
+    outline: none;
+    background-color: #bababa;
+    font-size: 15px;
+ }
+ .Gestiondesnotes #maincontent .tableau table tr td .IRP{
+    width: 80px;
+    height: 30px;
+    text-align: center;
+ }
+ .Gestiondesnotes #maincontent .tableau table tr td .IMP{
+    width: 60px;
+    height: 70px;
+ }
+ .Gestiondesnotes #maincontent .tableau table tr td .INP{
+    border: none;
+    outline: none;
+    width: 70px;
+    height: 44px;
+ }
+ .Gestiondesnotes #maincontent .recherche{
+     position: relative;
+ }
+ .Gestiondesnotes #maincontent .recherche img{
+     position: absolute;
+     margin-left: -35px;
+     margin-top: 8px;
+     padding: 5px;
+     width: 16px;
+     cursor: pointer;
+ }
+ .Gestiondesnotes #maincontent .recherche input{
+     border: none;
+     border-radius: 10px;
+     outline: none;
+     width: 190px;
+     height: 40px;
+     text-align: center; 
+     font-family: 'Raleway-Regular','Arial','sans serif';
+     font-size: 16px;  
+ }
+ .Gestiondesnotes #maincontent .recherche #liste p{
+        text-align: center;
+ }
+ .Gestiondesnotes #maincontent #bouton{
+    margin-top: 8px;
+ }
+ .Gestiondesnotes #maincontent #bouton button{
+    width: 100px;
+    height: 40px;
+    background-color: #2f77ca;
+    border: none;
+    outline: none;
+    cursor:pointer;
+ }
+ .Gestiondesnotes #maincontent #bouton button:hover{
+    color: #fff;
+ }

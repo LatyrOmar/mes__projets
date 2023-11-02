@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url(fonts/Raleway-Regular.ttf);
+    src: url(fonts/Raleway-Light.ttf),
+        url(fonts/Raleway-Black.ttf),
+        url(fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: 'alex-brush';
+    src: url(fonts/alex-brush/AlexBrush-Regular.ttf);   
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway-Regular', 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3px;
+    background-color: #222f3e;
+    color: white;
+    position: sticky;
+    top:0;
+}
+nav .programmer h1{
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+nav .programmer h1 img{
+    width: 110px;
+}
+nav .onglets{
+    margin-top: 25px;
+}
+nav .onglets a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #bababa;
+    font-size: 20px;
+}
+nav .onglets a:hover{
+    color: #fff;
+    border-bottom: 2px solid #bababa;
+}
+header{
+    margin-top: -9px;
+    padding: 30px 5px;
+    font-size: 20px;
+}
+header h1{
+    font-family: 'alex-brush',sans-serif;
+    font-weight: 700;
+}
+header h1,p{
+    text-align: center;
+}
+header p,ul{
+   font-size: 23px;
+}
+header ul{
+    margin-left: 100px ;
+    padding-left: 100px; 
+}
+header ul li{
+  list-style: circle;
+  list-style-position: inside;
+}
+#services{
+    padding: 40px 0;
+    background-color: #fff;
+}
+#services h1{
+    text-align: center;
+}
+#services .services-cartes{
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#services .services-cartes .cartes{
+    background-color: #f2f2f2;
+    margin-right: 10px;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+#services .services-cartes .cartes .lien{
+    text-decoration: none;
+     color: #000;
+}
+#services .services-cartes .cartes a img{
+    width: 50px;
+    margin-top: 30px;
+}
+footer{
+    background-color: #18212B;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 80px;
+    color: #bababa;
+    margin-bottom: -50px;
+}
+footer .reseaux-sociaux{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50Px;
+}
+footer .contact{
+    margin-left: -15px;
+    display: flex;
+    position: relative;
+}
+footer .contact .mail{
+    margin-left: 40px;
+}
+footer .contact p a img{
+    margin-left: 20Px;
+    position: absolute;
+    top: 5px;
+}
+footer .reseaux-sociaux p img{
+    margin-right: 10px;
+    width: 30px;
+    color: #fff;
+    padding: 6px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #18212B;
+    border-radius: 50%;
+    outline: none;
+    background-color: #bababa;
+}
+footer .reseaux-sociaux #tweet img:hover{
+   background-color: #08a0e9;
+}
+footer .reseaux-sociaux #fbook img:hover{
+    background-color: #0078ff;
+}
+footer .reseaux-sociaux #youtb img:hover{
+    background-color: #ff0000;
+    border-radius: 47%;
+}
+footer .reseaux-sociaux #snap img:hover{
+    background-color: #fefc00;
+}
+@media screen and (max-width: 850px){
+    nav{
+        overflow-x: auto;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 20px 0px;
+    }
+    nav .programmer h1{
+        font-size: 20px;
+        font-weight: 480;
+      
+    }
+    nav .onglets{
+        margin: -10px 20px 0 20px;
+    }
+    nav .onglets a{
+        display: block;
+        flex-wrap: wrap;
+        margin-top: 5px;
+    }
+    header ul{
+        margin-left:20px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    footer{
+        margin-bottom: -40Px;
+    }
+    footer p{
+        margin-left: 20px;    
+    }
+    footer .contact{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    footer .contact .mail a img{
+        margin-top: 60px;
+    }
+    footer .reseaux-sociaux p img{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}

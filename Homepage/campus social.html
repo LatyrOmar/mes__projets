@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gestion du campus social/css/campus social.css">
+    <title>Gestion du campus social</title>
+</head>
+<body>
+    <nav>
+        <div class="programmer">
+            <h1><img src="Homepage images/logo universite thies.jpg" alt=""></h1>
+        </div>
+        <div class="onglets">
+            <a href="Homepage.html">Acceuil</a>
+            <a href="inscriptions.html">Inscription</a>
+            <a href="note.html">Notes</a>
+            <a href="cours.html">Cours</a>
+            <a href="admistrative.html">Cursus</a>
+
+        </div>  
+    </nav>
+    <header>
+        <p>Remplissez le formulaire ci-dessous puis cliquer sur " Loger " pour loger l'etudiant dans le campus social séléctionné
+             ou cliquer sur " voir campus social " pour afficher l'organisation des campus.
+        </p>
+    </header>
+    <section id="formulaire">
+        <form action="">
+            <div class="infos">
+                <fieldset>
+                    <legend>Identité</legend>
+                    <div class="inputs">
+                        <label for="prenom">Prenom:</label>
+                        <input type="text" name="prenom" id="prenom" autofocus>
+                    </div>
+                    <div class="inputs">
+                    <label for="nom">Nom:</label>
+                    <input type="text" name="nom" id="nom">
+                    </div>
+                    <div class="inputs">
+                        <label for="sexe">Genre:</label>
+                        <select name="genre" id="genre">
+                            <option value="">---</option>
+                            <option value="M">Homme</option>
+                            <option value="">Femme</option>
+                            <option value="">Autre</option>
+                        </select>
+                    </div>    
+                    <div class="inputs">
+                        <label for="naissance">Date de naissance:</label>
+                        <input type="date" id="naissance" name="naissance">
+                    </div> 
+                    <div class="inputs">
+                        <label for="nationalité">Nationalité:</label>
+                        <select name="nationalité" id="nationalité">
+                            <option value="">---</option>
+                            <option value="Sénégalais">Sénégalais</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="inputs">
+                        <label for="adresse">Adresse:</label>
+                        <input type="text" id="adresse" name="adresse">
+                    </div>
+                    <div class="inputs">
+                        <label for="INE">INE:</label>
+                        <input type="text" id="INE" name="INE">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Etude</legend>
+                    <div class="inputs">
+                        <label for="filière">Filière:</label>
+                        <input type="text" id="filière" name="filière">
+                    </div>    
+                    <div class="inputs">
+                        <label for="niveau">Niveau:</label>
+                        <select name="niveau" id="niveau">
+                            <option value="">---</option>
+                            <option value="Licence 1">Licence 1</option>
+                            <option value="Licence 2">Licence 2</option>
+                            <option value="Licence 3">Licence 3</option>
+                            <option value="Master 1">Master 1</option>
+                            <option value="Master 2">Master 2</option>
+                        </select>
+                    </div>    
+                </fieldset>
+                <fieldset>
+                    <legend>Campus</legend>
+                    <div class="inputs">
+                        <label for="campus">Campus Social:</label>
+                        <input type="text" id="campus" name="campus">
+                    </div>    
+                    <div class="inputs">
+                        <label for="chambre">Numéro du chambre:</label> 
+                        <input type="number" id="chambre" name="chambre" min="1" max="100">
+                    </div>
+                </fieldset>
+            </div>
+            <div class="bouton">
+                <button id="bouton" onclick="validation ()">Loger</button>
+            </div>
+        </form>
+        <div class="répartition">
+            <p><a  href="" id="voirCampus">Voir Campus social:</a></p>
+        </div>
+    </section>
+    <script src="gestion du campus social/js/campus.js"></script>
+</body>
+</html>
